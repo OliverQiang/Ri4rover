@@ -28,73 +28,16 @@ permalink: /faculty
                     </div>
                     <div class="row gx-5 row-cols-1 row-cols-sm-2 row-cols-xl-4 justify-content-center">
 
-
-
                         <!-- photos start here -->
-                                                <div class="col mb-5 mb-5 mb-xl-5">
-                            <div class="text-center">
-                                <img class="img-fluid mb-4 px-4" style="width:255px; height:255px; object-fit: cover" src="assets/faculty/JamesGoppert_PurdueUniversity.jpg" alt="Img not found" />
-                                <h5 class="fw-bolder">James Goppert</h5>
-                                <div class="fst-italic text-muted">Purdue University</div>
-                            </div>
-                        </div>
-                        
+                        {% for faculty in site.data.faculty %}
                         <div class="col mb-5 mb-5 mb-xl-5">
                             <div class="text-center">
-                                <img class="img-fluid mb-4 px-4" style="width:255px; height:255px; object-fit: cover" src="assets/faculty/JohnMott_PurdueUniversity.jpg" alt="Img not found" />
-                                <h5 class="fw-bolder">John Mott</h5>
-                                <div class="fst-italic text-muted">Purdue University</div>
+                                <img class="img-fluid mb-4 px-4" style="width:255px; height:255px; object-fit: cover" src="{{ faculty.photo }}" alt="Img not found" />
+                                <h5 class="fw-bolder">{{ faculty.firstname }} {{ faculty.lastname }}</h5>
+                                <div class="fst-italic text-muted">{{ faculty.organization }}</div>
                             </div>
                         </div>
-                        
-                        <div class="col mb-5 mb-5 mb-xl-5">
-                            <div class="text-center">
-                                <img class="img-fluid mb-4 px-4" style="width:255px; height:255px; object-fit: cover" src="assets/faculty/QiangQiu_PurdueUniversity.jpg" alt="Img not found" />
-                                <h5 class="fw-bolder">Qiang Qiu</h5>
-                                <div class="fst-italic text-muted">Purdue University</div>
-                            </div>
-                        </div>
-                        
-                        <div class="col mb-5 mb-5 mb-xl-5">
-                            <div class="text-center">
-                                <img class="img-fluid mb-4 px-4" style="width:255px; height:255px; object-fit: cover" src="assets/faculty/ShreyasSundaram_PurdueUniversity.jpg" alt="Img not found" />
-                                <h5 class="fw-bolder">Shreyas Sundaram</h5>
-                                <div class="fst-italic text-muted">Purdue University</div>
-                            </div>
-                        </div>
-                        
-                        <div class="col mb-5 mb-5 mb-xl-5">
-                            <div class="text-center">
-                                <img class="img-fluid mb-4 px-4" style="width:255px; height:255px; object-fit: cover" src="assets/faculty/WeiZakharov_PurdueUniversity.jpg" alt="Img not found" />
-                                <h5 class="fw-bolder">Wei Zakharov</h5>
-                                <div class="fst-italic text-muted">Purdue University</div>
-                            </div>
-                        </div>
-                        
-                        <div class="col mb-5 mb-5 mb-xl-5">
-                            <div class="text-center">
-                                <img class="img-fluid mb-4 px-4" style="width:255px; height:255px; object-fit: cover" src="assets/faculty/YiranChen_DukeUniversity.jpg" alt="Img not found" />
-                                <h5 class="fw-bolder">Yiran Chen</h5>
-                                <div class="fst-italic text-muted">Duke University</div>
-                            </div>
-                        </div>
-                        
-                        <div class="col mb-5 mb-5 mb-xl-5">
-                            <div class="text-center">
-                                <img class="img-fluid mb-4 px-4" style="width:255px; height:255px; object-fit: cover" src="assets/faculty/Yung-hsiangLu_PurdueUniversity.jpg" alt="Img not found" />
-                                <h5 class="fw-bolder">Yung-hsiang Lu</h5>
-                                <div class="fst-italic text-muted">Purdue University</div>
-                            </div>
-                        </div>
-                        
-
-                        
-
-                        
-
-                        
-
-                        
+                        {% endfor%}
 
                     </div>
                 </div>
