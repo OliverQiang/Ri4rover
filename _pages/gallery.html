@@ -32,14 +32,14 @@ title: Ri4rover
                 </div>
             </div>
             {% assign image_files = site.static_files | where: "image", true %}
-                {% for myimage in image_files %}
-                    {{
-                        <div class="col-lg-6">
-                            <div class="position-relative">
-                                <img class="img-fluid rounded-3 mb-3" src="myimage.path" alt="..." />
-                            </div>
+            {% for myimage in image_files %}
+                {{
+                    <div class="col-lg-6">
+                        <div class="position-relative">
+                            <img class="img-fluid rounded-3 mb-3" src="myimage.path" alt="..." />
                         </div>
-                    }}
+                    </div>
+                }}
             {% endfor %}    
         </div>
     </div>
