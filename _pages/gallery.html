@@ -15,7 +15,7 @@ title: Ri4rover
             {% for myimage in image_files %}
             <div class="col-lg-6 mb-5 mb-5 mb-xl-5">
                 <div class="position-relative">
-                    <img class="img-fluid rounded-3 mb-3" style="width:588px; height:300.75px;" src="{{myimage.path}}" alt="..." />
+                    <img class="img-fluid rounded-3 mb-3" style="width:588px; height:300.75px; object-fit: cover" src="{{myimage.path}}" alt="..." />
                 </div>
             </div>
             {% endfor %}    
@@ -26,9 +26,7 @@ title: Ri4rover
         <div class="row gx-5">
             {% for video in site.data.video %}
             <div class="col mb-5 mb-5 mb-xl-5">
-                <div class="text-center">
-                    <iframe src="{{video.path}}" width="640" height="480" allow="autoplay"></iframe> 
-                </div>
+                <iframe src="{{video.path}}" width="640" height="480" allow="autoplay"></iframe> 
             </div>
             {% endfor%}
         </div>
