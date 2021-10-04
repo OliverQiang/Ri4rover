@@ -36,7 +36,7 @@ include: ['_pages']
 
 defaults:
   - scope:
-      path: "assets/img"
+      path: "assets/gallery"
     values:
       image: true
 
