@@ -11,26 +11,6 @@ title: Ri4rover
             <p class="lead fw-normal text-muted mb-0">Pictures</p>
         </div>
         <div class="row gx-5">
-            <div class="col-lg-6">
-                <div class="position-relative mb-5">
-                    <img class="img-fluid rounded-3 mb-3" src="assets/Competition field.jpg" alt="..." />
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="position-relative mb-5 mb-lg-0">
-                    <img class="img-fluid rounded-3 mb-3" src="assets/hanger.png" alt="..." />
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="position-relative mb-5">
-                    <img class="img-fluid rounded-3 mb-3" src="assets/Gazebo.png" alt="..." />
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="position-relative">
-                    <img class="img-fluid rounded-3 mb-3" src="assets/simulator demo.png" alt="..." />
-                </div>
-            </div>
             {% assign image_files = site.static_files | where: "image", true %}
             {% for myimage in image_files %}
             <div class="col-lg-6">
