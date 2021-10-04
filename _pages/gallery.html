@@ -23,8 +23,14 @@ title: Ri4rover
         <div class="text-center mb-5">
             <p class="lead fw-normal text-muted mb-0">Videos</p>
         </div>
-        <div>
-            <iframe src="{{video.path}}" width="640" height="480" allow="autoplay"></iframe> 
+        <div class="row gx-5">
+            {% for video in site.data.video %}
+            <div class="col-lg-6 mb-5 mb-5 mb-xl-5">
+                <div class="position-relative">
+                    <iframe src="{{video.path}}" width="640" height="480" allow="autoplay"></iframe> 
+                </div>
+            </div>
+            {% endfor %}
         </div>
     </div>
 </section>
