@@ -31,6 +31,12 @@ title: Ri4rover
                     <img class="img-fluid rounded-3 mb-3" src="assets/simulator demo.png" alt="..." />
                 </div>
             </div>
+            <div>
+                {% assign image_files = site.static_files | where: "image", true %}
+                {% for myimage in image_files %}
+                    {{ myimage.path }}
+                {% endfor %}
+            </div>
         </div>
     </div>
 </section>
