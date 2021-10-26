@@ -3,10 +3,36 @@ permalink: /group
 layout: default
 title: Ri4rover
 ---
+<!-- faculty -->
+<section class="py-5 bg-light">
+    <div class="container px-5 my-5">
+        <div class="text-center">
+            <h1 class="fw-bolder mb-5">Faculty</h2>
+        </div>
+        <div class="row gx-5 row-cols-1 row-cols-sm-2 row-cols-xl-4 justify-content-center">
+
+            <!-- photos start here -->
+            {% for faculty in site.data.faculty %}
+            <div class="col mb-5 mb-5 mb-xl-5">
+                <div class="text-center">
+                    <img class="img-fluid mb-4 px-4" style="width:255px; height:255px; object-fit: cover" src="{{ faculty.photo }}" alt="Img not found" />
+                    <h5 class="fw-bolder">{{ faculty.firstname }} {{ faculty.lastname }}</h5>
+                    <div class="fst-italic text-muted">{{ faculty.organization }}</div>
+                </div>
+            </div>
+            {% endfor%}
+
+        </div>
+    </div>
+</section>
+
 <!-- team introduction -->
 <section class="py-5 bg-light" id="scroll-target">
     <div class="container px-5 my-5">
         <div class="row gx-5 align-items-center">
+            <div class="text-center">
+                <h1 class="fw-bolder mb-5">Research Group</h2>
+            </div>
             <div class="col-lg-6"><img class="img-fluid rounded mb-5 mb-lg-0" src="assets/gallery/e.auto-drone.jpeg" alt="..." /></div>
             <div class="col-lg-6">
                 <h2 class="fw-bolder">CAM2 - Auto Drone</h2>
@@ -15,15 +41,12 @@ title: Ri4rover
         </div>
     </div>
 </section>
+
 <!-- Team members section-->
 <section class="py-5 bg-light">
     <div class="container px-5 my-5">
-        <div class="text-center">
-            <h1 class="fw-bolder mb-5">Research Group</h2>
-        </div>
+        
         <div class="row gx-5 row-cols-1 row-cols-sm-2 row-cols-xl-4 justify-content-center">
-
-
 
             <!-- photos start here -->
             {% for student in site.data.group %}
