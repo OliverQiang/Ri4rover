@@ -1,17 +1,19 @@
 @font-face {
-  font-family: "iconfont"; /* Project id  */
-  src: url('iconfont.ttf?t=1710727535185') format('truetype');
+    font-family: "custom-icon";
+    /* Project id  */
+    src: url('iconfont.ttf?t=1710727535185') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
-.iconfont {
-  font-family: "iconfont" !important;
-  font-size: 16px;
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.icon-custom {
+    font-family: "custom-icon";
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-xinxi:before {
-  content: "\e619";
+.icon-xinxi::before {
+    content: "";
 }
-
